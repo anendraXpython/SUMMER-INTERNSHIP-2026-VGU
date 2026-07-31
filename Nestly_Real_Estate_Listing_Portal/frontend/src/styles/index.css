@@ -1,0 +1,1044 @@
+/* ==========================================================================
+   Nestly — global styles
+   Palette: navy header (#132A45), cream background (#F1EADC),
+   green primary (#2F6F5E), gold accent (#C9A227)
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: #f0e9da;
+  color: #24303d;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 40px 60px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #132a45;
+  margin-bottom: 6px;
+}
+
+h3 {
+  color: #132a45;
+}
+
+/* ---------------- Header ---------------- */
+
+.app-header {
+  background: #132a45;
+  color: #fff;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.header-right nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-right nav a {
+  color: #dfe6ee;
+  font-size: 0.95rem;
+}
+
+.header-right nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.user-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.role-pill {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.role-pill.role-buyer {
+  background: #2f6f5e;
+  color: #fff;
+}
+
+.role-pill.role-agent {
+  background: #c9a227;
+  color: #1c1c1c;
+}
+
+.logout-link {
+  color: #ffd479;
+  font-weight: 600;
+}
+
+/* ---------------- Buttons ---------------- */
+
+.btn-primary,
+.btn-secondary {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.05s ease, opacity 0.15s ease;
+}
+
+.btn-primary {
+  background: #2f6f5e;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background: #d9d2c3;
+  color: #2b2b2b;
+}
+
+.btn-secondary:hover {
+  opacity: 0.85;
+}
+
+.btn-primary:active,
+.btn-secondary:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ---------------- Login Page ---------------- */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page .hero {
+  background: #e7ded0;
+  text-align: center;
+  padding: 50px 20px 40px;
+}
+
+.login-page .hero h2 {
+  font-size: 2rem;
+}
+
+.login-section {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f0e9da;
+}
+
+.login-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 34px 38px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.login-box label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #445;
+}
+
+.login-box input {
+  padding: 10px 12px;
+  border: 1px solid #d6d0c4;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.role-toggle {
+  display: flex;
+  gap: 10px;
+  margin: 6px 0 14px;
+}
+
+.role-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #c8c1b2;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.role-btn.active {
+  background: #2f6f5e;
+  border-color: #2f6f5e;
+  color: #fff;
+}
+
+/* ---------------- Messages ---------------- */
+
+.message {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.message.success {
+  background: #e3f3e9;
+  color: #1e5b3c;
+  border: 1px solid #b7ddc3;
+}
+
+.message.error {
+  background: #fbe6e4;
+  color: #8f2f27;
+  border: 1px solid #f0bdb7;
+}
+
+/* ---------------- Hero / Search ---------------- */
+
+.hero {
+  background: #e7ded0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.9rem;
+}
+
+.search-box {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-box select,
+.search-box input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #cfc7b6;
+  font-size: 0.9rem;
+  min-width: 130px;
+}
+
+.save-search-btn {
+  background: #c9a227;
+  color: #1c1c1c;
+  font-weight: 600;
+}
+
+/* ---------------- Listings ---------------- */
+
+.result-text {
+  color: #5a6470;
+  margin-bottom: 20px;
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.listing-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image-wrap {
+  position: relative;
+  height: 190px;
+}
+
+.card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.status-for-sale {
+  background: #2f6f5e;
+}
+
+.status-pending {
+  background: #c9a227;
+  color: #1c1c1c;
+}
+
+.status-sold {
+  background: #7c7c7c;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 20px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.favorite-btn.active {
+  color: #c0392b;
+}
+
+.card-body {
+  padding: 16px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2f6f5e;
+  margin: 0;
+}
+
+.price-per-sqft {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #7c8a97;
+}
+
+.card-body h3 {
+  margin: 4px 0 0;
+  font-size: 1.05rem;
+}
+
+.card-location {
+  color: #6c7683;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.card-meta {
+  color: #4a5560;
+  font-size: 0.85rem;
+  margin: 4px 0 10px;
+}
+
+.view-details-btn {
+  align-self: flex-start;
+}
+
+.details {
+  margin-top: 14px;
+  border-top: 1px solid #eee3;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.built-year {
+  color: #6c7683;
+  font-size: 0.85rem;
+  margin: -6px 0 0;
+}
+
+.agent-note {
+  font-size: 0.8rem;
+  color: #8a93a0;
+  margin-top: 4px;
+}
+
+.pagination {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #cfc7b6;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+}
+
+/* ---------------- School Ratings / Walk Score ---------------- */
+
+.school-ratings,
+.walk-score-badge {
+  background: #f6f2e8;
+  border: 1px solid #e7ddc8;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.school-ratings-header,
+.walk-score-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.school-score,
+.walk-score-num {
+  background: #2f6f5e;
+  color: #fff;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.walk-score-desc {
+  color: #445;
+}
+
+.sample-tag {
+  margin-left: auto;
+  font-size: 0.7rem;
+  background: #eee0b8;
+  color: #6b5417;
+  padding: 2px 8px;
+  border-radius: 10px;
+  cursor: help;
+}
+
+.school-ratings ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  font-size: 0.85rem;
+  color: #445;
+}
+
+.walk-score-sub {
+  margin-top: 8px;
+  display: flex;
+  gap: 18px;
+  font-size: 0.85rem;
+  color: #445;
+}
+
+/* ---------------- Price History ---------------- */
+
+.price-history-chart {
+  background: #fff;
+  border: 1px solid #eee0c8;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.price-history-chart h4,
+.comparable-sales h4,
+.virtual-tour-embed h4 {
+  margin: 0 0 10px;
+  color: #132a45;
+  font-size: 1rem;
+}
+
+.price-history-note {
+  color: #6c7683;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* ---------------- Comparable Sales ---------------- */
+
+.comparable-sales {
+  background: #fff;
+  border: 1px solid #eee0c8;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.comparables-note {
+  color: #6c7683;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.comparables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.comparable-card {
+  border: 1px solid #eee3;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+.comparable-card img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+}
+
+.comparable-card-body {
+  padding: 8px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.comp-price {
+  font-weight: 700;
+  color: #2f6f5e;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.comp-price span {
+  font-weight: 500;
+  color: #8a93a0;
+  font-size: 0.75rem;
+}
+
+.comp-title {
+  font-size: 0.85rem;
+  margin: 2px 0 0;
+  font-weight: 600;
+}
+
+.comp-meta {
+  font-size: 0.75rem;
+  color: #6c7683;
+  margin: 0 0 4px;
+}
+
+/* ---------------- Virtual Tour ---------------- */
+
+.virtual-tour-embed {
+  background: #fff;
+  border: 1px solid #eee0c8;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.tour-iframe-wrap {
+  position: relative;
+  padding-top: 56%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tour-iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ---------------- Map ---------------- */
+
+.map-toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.map-container {
+  height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+}
+
+.draw-results {
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 18px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.draw-results ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+/* ---------------- Calculator ---------------- */
+
+.calc-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px 28px;
+  max-width: 480px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.calc-box label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #445;
+}
+
+.calc-box input {
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid #d6d0c4;
+}
+
+.calc-box button {
+  margin-top: 18px;
+}
+
+.calc-selected-note {
+  background: #f6f2e8;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #445;
+}
+
+.calc-result {
+  margin-top: 16px;
+  background: #f0f7f3;
+  border: 1px solid #cfe6da;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.saved-note {
+  font-size: 0.8rem;
+  color: #2f6f5e;
+  font-style: italic;
+}
+
+.amortization-chart,
+.rate-comparison {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-top: 24px;
+  max-width: 900px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+}
+
+.rate-comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.rate-comparison th,
+.rate-comparison td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.current-rate-row {
+  background: #f0f7f3;
+  font-weight: 700;
+}
+
+/* ---------------- Saved Searches ---------------- */
+
+.saved-searches-empty {
+  color: #6c7683;
+  margin-top: 14px;
+}
+
+.saved-searches-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 700px;
+}
+
+.saved-search-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.saved-search-card h4 {
+  margin: 0 0 4px;
+}
+
+.saved-search-filters {
+  margin: 0;
+  color: #445;
+  font-size: 0.9rem;
+}
+
+.saved-search-meta {
+  margin: 4px 0 0;
+  font-size: 0.75rem;
+  color: #8a93a0;
+}
+
+.saved-search-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+/* ---------------- Chat ---------------- */
+
+.chat-box {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 700px;
+  padding: 16px 18px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+}
+
+.chat-messages {
+  height: 260px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+}
+
+.chat-bubble {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.chat-bubble.own strong {
+  color: #2f6f5e;
+}
+
+.chat-bubble.other strong {
+  color: #132a45;
+}
+
+.agent-tag {
+  background: #c9a227;
+  color: #1c1c1c;
+  font-size: 0.65rem;
+  padding: 1px 6px;
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+.chat-input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input-row input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #d6d0c4;
+}
+
+.chat-status {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #8a93a0;
+}
+
+/* ---------------- Agent Dashboard ---------------- */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.dashboard-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 22px 26px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+  margin-bottom: 24px;
+}
+
+.views-breakdown {
+  padding-left: 18px;
+  font-size: 0.9rem;
+  color: #445;
+}
+
+.upsell-note {
+  color: #8a6d1a;
+  font-style: italic;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.plan-tile {
+  border: 1px solid #e5ddcb;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.plan-tile.active-plan {
+  border-color: #2f6f5e;
+  background: #f0f7f3;
+}
+
+.plan-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2f6f5e;
+  margin: 0;
+}
+
+.plan-tile ul {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0;
+  font-size: 0.8rem;
+  color: #556;
+  text-align: left;
+}
+
+.plan-tile ul li::before {
+  content: "✓ ";
+  color: #2f6f5e;
+}
+
+.current-plan-tag {
+  background: #2f6f5e;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.stripe-fallback {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed #ddd;
+}
+
+.stripe-fallback-note {
+  font-size: 0.75rem;
+  color: #8f2f27;
+  margin: 0 0 6px;
+}
+
+.plan-disclaimer {
+  margin-top: 16px;
+  font-size: 0.78rem;
+  color: #8a93a0;
+}
+
+.add-listing-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.add-listing-form input,
+.add-listing-form select,
+.add-listing-form textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #d6d0c4;
+  font-size: 0.9rem;
+}
+
+.add-listing-form textarea {
+  grid-column: 1 / -1;
+  min-height: 80px;
+  resize: vertical;
+}
+
+.add-listing-form button {
+  grid-column: 1 / -1;
+}
+
+/* ---------------- Payment banner ---------------- */
+
+.payment-banner {
+  padding: 12px 30px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment-banner-success {
+  background: #e3f3e9;
+  color: #1e5b3c;
+}
+
+.payment-banner-cancelled {
+  background: #f6ecd8;
+  color: #6b5417;
+}
+
+.payment-banner-close {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* ---------------- About ---------------- */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.about-subheading {
+  margin-top: 34px;
+}
+
+.about-tips {
+  margin-top: 12px;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+/* ---------------- Footer ---------------- */
+
+.app-footer {
+  margin-top: auto;
+  background: #132a45;
+  color: #cfd8e3;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.85rem;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 900px) {
+  section {
+    padding: 30px 20px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .add-listing-form {
+    grid-template-columns: 1fr;
+  }
+}
