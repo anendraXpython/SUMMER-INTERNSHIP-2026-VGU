@@ -121,4 +121,4 @@ frontend/
 
 ## Author
 
-Built by  — Anendra Singh Rajawat[ / [[LinkedIn](https://www.linkedin.com/in/anendra-singh-rajawat-a6aaab212/)] / [[Github](https://github.com/anendraXpython)]]
+Built by  — Anendra Singh Rajawat [/ [[LinkedIn](https://www.linkedin.com/in/anendra-singh-rajawat-a6aaab212/)] / [[Github](https://github.com/anendraXpython)]]
